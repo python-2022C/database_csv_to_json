@@ -1,3 +1,5 @@
+import csv
+
 def read_csv(filename:str)->list:
     """
     CSV file name is given split by comma and new line,
@@ -8,3 +10,8 @@ def read_csv(filename:str)->list:
     Returns:
         list: nested list
     """
+    # Open CSV file
+    with open(file=filename) as csvfile:
+        reader = csv.reader(csvfile)
+        data = list(reader)
+        return data
