@@ -1,3 +1,5 @@
+from ntpath import join
+from tinydb.database import Document
 from tinydb import TinyDB
 from read_data import read_csv
 
@@ -14,16 +16,15 @@ def csv_to_json(data:list)-> None:
     db = TinyDB('db.json')
 
     # Create Table
-    table = db.table(name='Mobile')
+    table = db.table(name='Mobiles')
 
-    # fields
-    ids, model, company, price = data[0]
-    # docs
-    list_of_docs = [{ids: row[0], model: row[1], company: row[2], price: row[3]} for row in data[1:]]
+    for i in data[1:]:
+        # ponename
+        ponename = ' '.join(i[1].split()[:2])
+        # Documents
+        doc = Document(value={"model":ponename, "company":i[2], "price":i[3]}, doc_id=i[0])
+        table.insert(doc)
 
-    # Insert into Table
-    table.insert_multiple(documents=list_of_docs)
 
-
-data = read_csv(filename='specifications.csv')
-csv_to_json(data=data)
+data = read_csv('specifications.csv')
+csv_to_json(data)
