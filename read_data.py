@@ -13,5 +13,5 @@ def read_csv(filename:str)->list:
     # Open CSV file
     with open(file=filename) as csvfile:
         reader = csv.reader(csvfile)
-        rows = list(reader)
-        return rows
+        data = list(reader)
+        return data
