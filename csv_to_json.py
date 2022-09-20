@@ -17,11 +17,14 @@ def csv_to_json(data:list)-> None:
     # Create Table
     table = db.table(name='Mobiles')
 
+    # filtrs
+    ids, model, company, price = data[0]
+
     for i in data[1:]:
         # ponename
         ponename = ' '.join(i[1].split()[:2])
         # Documents
-        doc = Document(value={"model":ponename, "company":i[2], "price":i[3]}, doc_id=i[0])
+        doc = Document(value={model:ponename, company:i[2], price:i[3]}, doc_id=i[0])
         table.insert(doc)
 
 
