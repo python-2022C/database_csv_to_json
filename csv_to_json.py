@@ -15,7 +15,7 @@ def csv_to_json(data:list)-> None:
     db = TinyDB('db.json')
 
     # Create Table
-    table = db.table(name='Mobiles')
+    table = db.table(name='Mobile')
 
     # filtrs
     ids, model, company, price = data[0]
