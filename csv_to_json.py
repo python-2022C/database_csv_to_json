@@ -1,4 +1,3 @@
-from ntpath import join
 from tinydb.database import Document
 from tinydb import TinyDB
 from read_data import read_csv
