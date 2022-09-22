@@ -19,8 +19,10 @@ def csv_to_json(data:list)-> None:
     # fields
     ids, model, company, price = data[0]
     # docs
-    list_of_docs = [{ids: row[0], model: row[1], company: row[2], price: row[3]} for row in data[1:]]
+    list_of_docs = [{model: " ".join(row[1].split()[:2]), company: row[2], price: row[3]} for row in data[1:]]
 
+    # Clear data
+    table.truncate()
     # Insert into Table
     table.insert_multiple(documents=list_of_docs)
 
