@@ -11,7 +11,6 @@ def read_csv(filename:str)->list:
         list: nested list
     """
     # Open CSV file
-    with open(file=filename) as csvfile:
-        reader = csv.reader(csvfile)
-        data = list(reader)
-        return data
+    with open(filename) as csvfile:
+        CSV = csv.reader(csvfile)
+        return list(CSV)
