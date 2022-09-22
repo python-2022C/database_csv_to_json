@@ -19,13 +19,14 @@ def csv_to_json(data:list)-> None:
 
     # filtrs
     ids, model, company, price = data[0]
+    # docs
+    list_of_docs = [{model: " ".join(row[1].split()[:2]), company: row[2], price: row[3]} for row in data[1:]]
 
-    for i in data[1:]:
-        # ponename
-        ponename = ' '.join(i[1].split()[:2])
-        # Documents
-        doc = Document(value={model:ponename, company:i[2], price:i[3]}, doc_id=i[0])
-        table.insert(doc)
+    # Clear data
+    table.truncate()
+    
+    # Insert into Table
+    table.insert_multiple(documents=list_of_docs)
 
 
 data = read_csv('specifications.csv')
