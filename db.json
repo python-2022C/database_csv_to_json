@@ -2,78 +2,78 @@
     "Mobile": {
         "1": {
             "model": "Galaxy S21",
-            "comppriceany": "Samsung",
-            "": "500"
+            "company": "Samsung",
+            "price": "500"
         },
         "2": {
             "model": "Galaxy S20",
-            "comppriceany": "Samsung",
-            "": "494"
+            "company": "Samsung",
+            "price": "494"
         },
         "3": {
             "model": "Note20 Ultra",
-            "comppriceany": "Samsung",
-            "": "549"
+            "company": "Samsung",
+            "price": "549"
         },
         "4": {
             "model": "Galaxy S10+",
-            "comppriceany": "Samsung",
-            "": "1299"
+            "company": "Samsung",
+            "price": "1299"
         },
         "5": {
             "model": "iPhone 12",
-            "comppriceany": "Apple",
-            "": "699"
+            "company": "Apple",
+            "price": "699"
         },
         "6": {
             "model": "iPhone SE",
-            "comppriceany": "Apple",
-            "": "399"
+            "company": "Apple",
+            "price": "399"
         },
         "7": {
             "model": "iPhone 11",
-            "comppriceany": "Apple",
-            "": "599"
+            "company": "Apple",
+            "price": "599"
         },
         "8": {
             "model": "Huawei P30",
-            "comppriceany": "Huawei",
-            "": "624"
+            "company": "Huawei",
+            "price": "624"
         },
         "9": {
             "model": "Huawei Mate",
-            "comppriceany": "Huawei",
-            "": "499"
+            "company": "Huawei",
+            "price": "499"
         },
         "10": {
             "model": "Oppo Find",
-            "comppriceany": "Oppo",
-            "": "997"
+            "company": "Oppo",
+            "price": "997"
         },
         "11": {
             "model": "Oppo Find",
-            "comppriceany": "Oppo",
-            "": "800"
+            "company": "Oppo",
+            "price": "800"
         },
         "12": {
             "model": "Oppo Reno",
-            "comppriceany": "Oppo",
-            "": "739"
+            "company": "Oppo",
+            "price": "739"
         },
         "13": {
             "model": "Xiaomi Black",
-            "comppriceany": "Xiaomi",
-            "": "705"
+            "company": "Xiaomi",
+            "price": "705"
         },
         "14": {
             "model": "Xiaomi Redmi",
-            "comppriceany": "Xiaomi",
-            "": "190"
+            "company": "Xiaomi",
+            "price": "190"
         },
         "15": {
             "model": "Xiaomi Redmi",
-            "comppriceany": "Xiaomi",
-            "": "236"
+            "company": "Xiaomi",
+            "price": "236"
         }
     }
 }
